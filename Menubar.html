@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+       * {
+        margin: 0px;
+        padding: 0px;
+       }
+        .mainBody{
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(212, 243, 126, 0.6),rgba(85, 233, 221, 0.6),rgba(212, 243, 126, 0.6));
+
+        }
+        .menubar{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .menu-inerContainer{
+            display: flex;
+            justify-content: center;
+            
+
+        }
+        .sub-menu{
+            display: none;
+        }
+        .link:hover .sub-menu{
+            display: block;
+
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="mainBody">
+        <div class="menubar">
+           <div>
+              <div><h1>Crispy Kichen</h1></div>
+            </div>
+            <div class="menu-inerContainer">
+                    <div><a href="" class="links">Home</a></div>
+                    <div><a href="" class="link">Menu</a>
+                        <div class="sub-menu">
+                            <div class="sub-header"><a href="" class="links2">veg</a></div>
+                            <div class="sub-header"><a href="" class="links2"> Non</a></div>
+                            <div class="sub-header"><a href="" class="links2">Diserts</a></div>
+                            <div class="sub-header"><a href="" class="links2"> Staters</a></div>
+                        </div>    
+                    </div>
+                    <div class="Course-Header"><a href="" class="links">Our Updates</a></div>
+            </div>
+            <div>
+                <div><a href="" class="links">reservattion</a></div>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

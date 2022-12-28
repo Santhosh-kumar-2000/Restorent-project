@@ -9,18 +9,18 @@
     .mainBody{
         width: 100%;
         height: 100vh;
-        background-color:rgb(251, 104, 51) ;
+        background-color:rgb(247, 241, 239) ;
     }
     .main-grid{
         position: relative;
         left: 20%;
         top: 5px;
         display: grid;
-        width: 60%;
+        width: 50%;
         height: 94vh;
         border:5px solid black;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: 0.8fr auto;
+        grid-template-rows: 0.4fr 1fr 1fr 1fr;
     }
     .grid-items{
         border:5px solid black;
@@ -33,14 +33,28 @@
         width: 10px;
         height: 10px;
         border-radius: 50px;
+        text-align: center;
     }
-    .B-img{
-        width: 30px;
-        height: 30px;
+    #B-img{
+        width: 200px;
+        height: 200px;
     }
-    .S-img{
-        width: 10px;
-        height: 10px;
+    #S-img{
+        width: 200px;
+        height: 200px;
+    }
+    .d-img{
+        width: 100px;
+        height: 100px;
+    }
+    .items{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #B-heading{
+        width: 100%;
+        background-color: rgb(221, 131, 28);
     }
 
 </style>
@@ -49,19 +63,50 @@
     <div class="mainBody">
         <div class="main-grid">
             <div class="d1 grid-items">
-                <div style="background-color: aqua;">
-                <h1>Restorent <br><pre>   Menu Card</pre></h1>
+                <div style="background-color: rgb(223, 118, 33);">
+                <h1>restaurants <br><pre>   Menu Card</pre></h1>
                 </div>
             </div>
-            <div class="d2 grid-items"></div>
+            <div class="d2 grid-items">
+                <div class="biryani-menu">
+                    <div id="B-heading"> <h1>BIRIYANIS</h1></div>
+                    <div class="items"><div> chicken Biryani </div> <div> 210 </div></div>
+                    <div class="items"> <div>mutton biryani </div> <div>253 </div></div>
+                    <div class="items"><div>chicken Family packdiv </div>  <div> 552 </div></div>
+                    <div class="items" ><div> Mutton Family pack </div>576</div></div>
+                    <div class="items"> <div>Spcial chicken biryani </div>  <div> 337 </div></div>
+                    <div class="items"> <div>Spcial mutton biryani</div> <div> 351</div></div>
+                    <div class="items">  <div>Suprime mutton biryani </div> <div>891</div> </div>
+                    <div class="items"> <div> Suprime chicken biryani</div> <div> 784</div></div>
+                </div>
+        
             <div class="d3 grid-items">
                 <div class="biryani"><img  id="B-img" src="biryani.jpg" alt=""></div>
             </div>
-            <div class="d4 grid-items"></div>
+            <div class="d4 grid-items">
+                <div class="Starters-menu">
+                    <div id="B-heading"> <h1>STARTERS</h1></div>
+                    <div class="items"><div> chilli chicken  </div> <div> 264 </div></div>
+                    <div class="items"> <div> Chicken 65</div> <div>265 </div></div>
+                    <div class="items"><div>Paper Chicken</div>  <div> 552 </div></div>
+                    <div class="items" ><div> Panner 65 </div>576</div></div>
+                    <div class="items"> <div>Veg. Manchurian </div>  <div> 170</div></div>
+                    <div class="items"> <div>Chicken Tikka Kebab</div> <div> 251</div></div>
+                   
+                </div>
+            
             <div class="d5 grid-items">
                 <div class="staeters"><img id="S-img" src="staters.jpg" alt=""></div>
             </div>
-            <div class="d6 grid-items"></div>
+            <div class="d6 grid-items">
+                <div class="Desserts-menu">
+                    <div id="B-heading"> <h1>DESSERTS</h1></div>
+                    <div class="items"><div> Double Kametea  </div> <div> 107</div></div>
+                    <div class="items"> <div> Qubani KaMeetha 250gm</div> <div>73</div></div>
+                    <div class="items"><div>appetizer</div>  <div> 300 </div></div>
+                    <div class="items" ><div> kaddu ka kheer</div>576</div></div>
+            </div>
+            <div> <class="grid-items"><img src="d-img.jpg" alt="" class="d-img"></div>
         </div>
     </div>
 </body>
